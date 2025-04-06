@@ -1,128 +1,127 @@
-Dicoit - Voice-Controlled AI Assistant
+# Dicoit - Voice-Controlled AI Assistant
 
+Dicoit is a Python-based voice-controlled virtual assistant inspired by JARVIS. It can perform various tasks using natural voice commands.
 
-Dicoit is a Python-based voice-controlled virtual assistant inspired by JARVIS, capable of performing a variety of tasks through natural voice commands.
+---
 
-🚀 Features
-🎙️ Voice Interaction: Communicate using natural speech
+## 🚀 Features
 
-🌐 Web Automation: Open websites (YouTube, Google, etc.)
+- 🎙️ **Voice Interaction**: Communicate using natural speech
+- 🌐 **Web Automation**: Open websites like YouTube, Google, etc.
+- 🎵 **Media Control**: Play YouTube videos or songs
+- 📚 **Information Retrieval**:
+  - Search Wikipedia
+  - Get the current time and date
+- 🎭 **Entertainment**: Hear random jokes
+- 💬 **Conversational**: Handles basic Q&A interactions
 
-🎵 Media Control: Play YouTube videos or songs
+---
 
-📚 Information Retrieval:
+## 📦 Installation
 
-Search Wikipedia
-
-Get the current time and date
-
-🎭 Entertainment: Tell random jokes
-
-💬 Conversational: Handle basic questions
-
-📦 Installation
-1. Clone the Repository
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/Dicoit-AI-Assistant.git
+### 1. Clone the Repository
+```bash
+git clone https://github.com/MaheshDhingra/Dicoit.git
 cd Dicoit-AI-Assistant
-2. Install Dependencies
-bash
-Copy
-Edit
+```
+
+### 2. Install Dependencies
+```bash
 pip install -r requirements.txt
-3. Additional Setup (if needed)
-Linux:
-bash
-Copy
-Edit
+```
+
+### 3. Additional Setup (if needed)
+
+#### Linux:
+```bash
 sudo apt-get install portaudio19-dev python3-pyaudio
-macOS:
-bash
-Copy
-Edit
+```
+
+#### macOS:
+```bash
 brew install portaudio
-🧠 Usage
-Run the Assistant
-bash
-Copy
-Edit
+```
+
+---
+
+## 🧠 Usage
+
+### Run the Assistant
+```bash
 python dicoit.py
-Try These Voice Commands
-“Open YouTube”
+```
 
-“Play [song name]”
+### Try These Voice Commands
+- "Open YouTube"
+- "Play [song name]"
+- "What time is it?"
+- "Tell me a joke"
+- "Wikipedia search for [topic]"
+- "What can you do?"
+- "Goodbye" (to exit)
 
-“What time is it?”
+---
 
-“Tell me a joke”
+## ⚙️ Configuration
 
-“Wikipedia search for [topic]”
-
-“What can you do?”
-
-“Goodbye” (to exit)
-
-⚙️ Configuration
-Voice Settings
-Change the voice in the code:
-
-python
-Copy
-Edit
+### Voice Settings
+To change the voice, modify the following in the code:
+```python
 # Set index to 0 for male voice, 1 for female
 engine.setProperty('voice', voices[1].id)
-Language Settings
-To adjust for different accents, update the language setting in take_command():
+```
 
-python
-Copy
-Edit
+### Language Settings
+To adjust for different accents, update the language setting in `take_command()`:
+```python
 language = 'en-in'
-🧾 Dependencies
-Python 3.6+
+```
 
-Core Packages
-SpeechRecognition – For processing audio input
+---
 
-pyttsx3 – Text-to-speech conversion
+## 🧾 Dependencies
 
-pywhatkit – YouTube integration
+### Requirements
+- Python 3.6+
 
-wikipedia – Fetches information from Wikipedia
+### Core Packages
+- `SpeechRecognition` – For processing audio input
+- `pyttsx3` – Text-to-speech conversion
+- `pywhatkit` – YouTube integration
+- `wikipedia` – Fetches information from Wikipedia
 
-🤝 Contributing
+---
+
+## 🤝 Contributing
+
 Contributions are welcome! To contribute:
 
-Fork the repository
-
-Create a feature branch
-
-bash
-Copy
-Edit
+1. Fork the repository
+2. Create a feature branch:
+```bash
 git checkout -b feature/AmazingFeature
-Commit your changes
-
-bash
-Copy
-Edit
-git commit -m 'Add AmazingFeature'
-Push to the branch
-
-bash
-Copy
-Edit
+```
+3. Commit your changes:
+```bash
+git commit -m "Add AmazingFeature"
+```
+4. Push to the branch:
+```bash
 git push origin feature/AmazingFeature
-Open a Pull Request
+```
+5. Open a Pull Request
 
-📄 License
-Distributed under the MIT License. See LICENSE for more information.
+---
 
-🙌 Acknowledgments
-Inspired by JARVIS from Iron Man
+## 📄 License
 
-Icons by Icons8
+Distributed under the MIT License. See `LICENSE` for more information.
 
-Built using Python's powerful AI/ML ecosystem
+---
+
+## 🙌 Acknowledgments
+
+- Inspired by JARVIS from Iron Man
+- Icons by [Icons8](https://icons8.com)
+- Built using Python's powerful AI/ML ecosystem
+
